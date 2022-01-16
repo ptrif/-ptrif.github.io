@@ -5,17 +5,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style-type: none;
-  margin:0 0 10px 0; 
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
   
 }
+
+
+ul {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  
+  
+  background-color: #333;
+  float: none;
+ 
+  
+} 
 
 li {
   float: left; 
@@ -28,22 +40,373 @@ li a {
   text-align: center;
   padding: 14px 120px;
   text-decoration: none;
-  font-size: large;
+  font-size: 17px;
 }
 
 li a:hover {
   background-color: #111;
 }
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 5px 10px 0 0;
+  overflow: auto;
+  background-color: #333;
+  float: none;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar li {
+  float: left;
+}
+.navbar  a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 120px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.navbar a:hover {
+  background-color: #111;
+}
+
+
+
+.flex-container-right-side-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: DodgerBlue;
+  margin-top: 10px;
+  margin-right: 30px;
+  float:right;
+  padding-top: 10px;
+  
+  
+}
+
+.flex-container-right-side-bar > div{
+  background-color: #f1f1f1;
+  margin: 10px;
+  margin-left: 20px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.flex-container-main {
+     
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+  
+  padding: 10px; 
+  margin-left: 80px;
+    
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  
+}
+.post{
+  
+ display: flex;
+ flex-wrap: wrap;
+ border: 1px solid #f0f0f0;
+ margin-bottom: 5px;
+ padding: 10px 15px;
+ padding-bottom: 5px;
+ max-width: 100%;
+ 
+ 
+}
+
+.post__author-picture{
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post_header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #f0f0f0;
+  
+}
+
+.post_post-name{
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 5px;
+  }
+
+.post_image{
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.post_content{
+  width: 60%;
+  border-radius: 5px;
+ 
+}
+
+.footer{
+  width: 60%;
+  display:inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0f0f0; 
+  padding-bottom: 2px;
+  font-size: 15px;
+   
+  
+}
+.footer--item{
+ font-size: 15px;
+ display:flex;
+
+ padding: 10px;
+ padding-bottom: 10px;
+ 
+ 
+  
+
+}
+
+.footer--img{
+  
+  height: 20px;
+  margin-right: 20px;
+}
+
+.footer__author-login{ 
+ font-size: 15px;
+  color: #696969;
+}
+
+
+
 </style>
 </head>
 <body>
 
+<nav>
 <ul>
   <li><a class="active" href="#home">Главная</a></li>
   <li><a href="#community">Сообщества</a></li>
   <li><a href="#users">Пользователи</a></li>
   <li><a href="#new">Новое</a></li>
 </ul>
+</nav>
+
+
+<div class="navbar">
+  <nav>
+  <ul>
+   <li><a href="#home" class="active">Текст</a></li> 
+   <li><a href="#news">Текст</a></li>
+   <li><a href="#contact">+Новый пост</a></li>
+   <li> <a href="#contact">Уведомления +5</a></li>
+  </ul>
+  </nav>
+</div>
+
+
+
+
+
+
+<div class="flex-container-right-side-bar">
+   <div> ADD BLOCK </div>
+   <div> Тут могла бы быть ваша реклама </div>
+ </div>
+
+<div class="flex-container-main">
+   <div class="post"> 
+     
+     <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
+     <div class="post_main">
+       <div class="post_header">
+       <div class="post_post-name">
+        Что делаем?
+      </div>
+      
+       
+      </div>
+      <div class="post_content"> изучаем html</div>
+      <div class="footer">
+        <div class="footer--item">
+          <img src="https://cdn-icons.flaticon.com/png/512/2589/premium/2589175.png?token=exp=1638268731~hmac=3409bc8affcd5c6fe4e12ff94f2054cd" class="footer--img"/> 
+          5 
+          </div>
+        <div class="footer--item">
+          <img src="https://cdn-icons.flaticon.com/png/512/5053/premium/5053315.png?token=exp=1638275649~hmac=48e9f959eef2987a644326c3e44b72e6" class="footer--img"/> 
+          5
+           </div>
+        <div class="footer--item"> 
+          <img src="https://cdn-icons.flaticon.com/png/512/3601/premium/3601571.png?token=exp=1638275778~hmac=0cde8f50f78e944762ad4a0924dab93a" class="footer--img"/> 
+          1
+         </div>
+         <div class="footer--item">
+         <div class="footer__author-login">@tiredPshekowskiy</div>
+         </div>
+		    
+      </div>
+     </div>
+     
+   </div>
+
+    <div class="post"> 
+     <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
+     <div class="post_main">
+       <div class="post_header">
+       <div class="post_post-name">
+        Что делаем?
+      </div>
+       
+      </div>
+      <div class="post_content"> изучаем html</div>
+      <div class="footer">
+        <div class="footer--item">
+          <img src="https://cdn-icons.flaticon.com/png/512/2589/premium/2589175.png?token=exp=1638268731~hmac=3409bc8affcd5c6fe4e12ff94f2054cd" class="footer--img"/> 
+          5 
+          </div>
+        <div class="footer--item">
+          <img src="https://cdn-icons.flaticon.com/png/512/5053/premium/5053315.png?token=exp=1638275649~hmac=48e9f959eef2987a644326c3e44b72e6" class="footer--img"/> 
+          5
+           </div>
+        <div class="footer--item"> 
+          <img src="https://cdn-icons.flaticon.com/png/512/3601/premium/3601571.png?token=exp=1638275778~hmac=0cde8f50f78e944762ad4a0924dab93a" class="footer--img"/> 
+          1
+         </div>
+         <div class="footer--item">
+         <div class="footer__author-login">@tiredPshekowskiy</div>
+         </div>
+		    
+      </div>
+     </div>
+     
+   </div>
+
+   <div class="post"> 
+    <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
+    <div class="post_main">
+      <div class="post_header">
+      <div class="post_post-name">
+       Что делаем?
+     </div>
+      
+     </div>
+     <div class="post_content"> какой же он миленький
+      <img class="post_image" src="https://i.pinimg.com/564x/12/5c/77/125c77a1a879eb62cd838989dd44fc09.jpg"/></div>
+     <div class="footer">
+       <div class="footer--item">
+         <img src="https://cdn-icons.flaticon.com/png/512/2589/premium/2589175.png?token=exp=1638268731~hmac=3409bc8affcd5c6fe4e12ff94f2054cd" class="footer--img"/> 
+         5 
+         </div>
+       <div class="footer--item">
+         <img src="https://cdn-icons.flaticon.com/png/512/5053/premium/5053315.png?token=exp=1638275649~hmac=48e9f959eef2987a644326c3e44b72e6" class="footer--img"/> 
+         5
+          </div>
+       <div class="footer--item"> 
+         <img src="https://cdn-icons.flaticon.com/png/512/3601/premium/3601571.png?token=exp=1638275778~hmac=0cde8f50f78e944762ad4a0924dab93a" class="footer--img"/> 
+         1
+        </div>
+        <div class="footer--item">
+        <div class="footer__author-login">@tiredPshekowskiy</div>
+        </div>
+       
+     </div>
+    </div>
+    
+  </div>
+
+  <div class="post"> 
+    <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
+    <div class="post_main">
+      <div class="post_header">
+      <div class="post_post-name">
+       Что делаем?
+     </div>
+      
+     </div>
+     <div class="post_content"> изучаем html</div>
+     <div class="footer">
+       <div class="footer--item">
+         <img src="https://cdn-icons.flaticon.com/png/512/2589/premium/2589175.png?token=exp=1638268731~hmac=3409bc8affcd5c6fe4e12ff94f2054cd" class="footer--img"/> 
+         5 
+         </div>
+       <div class="footer--item">
+         <img src="https://cdn-icons.flaticon.com/png/512/5053/premium/5053315.png?token=exp=1638275649~hmac=48e9f959eef2987a644326c3e44b72e6" class="footer--img"/> 
+         5
+          </div>
+       <div class="footer--item"> 
+         <img src="https://cdn-icons.flaticon.com/png/512/3601/premium/3601571.png?token=exp=1638275778~hmac=0cde8f50f78e944762ad4a0924dab93a" class="footer--img"/> 
+         1
+        </div>
+        <div class="footer--item">
+        <div class="footer__author-login">@tiredPshekowskiy</div>
+        </div>
+       
+     </div>
+    </div>
+    
+  </div>
+
+  <div class="post"> 
+    <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
+    <div class="post_main">
+      <div class="post_header">
+      <div class="post_post-name">
+       Что делаем?
+     </div>
+      
+     </div>
+     <div class="post_content"> 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat urna, mollis volutpat leo quis, aliquet pellentesque nisl. Donec sodales nec nulla at vestibulum. Curabitur justo dolor, pharetra sit amet lobortis ac, interdum non odio. Sed sit amet quam viverra, vulputate mi ac, pulvinar dui. Nullam nec sollicitudin odio. Ut fringilla convallis dui non lobortis. Fusce venenatis nunc felis, sed euismod ipsum rutrum egestas. Aliquam sagittis finibus ornare. In dignissim enim ac ex sodales facilisis. Praesent laoreet purus vestibulum eleifend porta. Sed sed massa at tellus iaculis consectetur in pellentesque est.
+
+      Phasellus euismod ligula ut lacus posuere facilisis. Integer laoreet tellus quis suscipit ultrices. In et tempus mi. Pellentesque non volutpat lectus, ac commodo sapien. Suspendisse fringilla nunc odio, non imperdiet leo rhoncus eu. Phasellus euismod odio libero. Duis viverra faucibus vestibulum. Nullam sed pellentesque lorem, at bibendum nulla. Integer placerat, magna quis dapibus scelerisque, dolor libero rutrum lacus, accumsan tempus odio elit eu eros. Aenean semper sem nec ultrices maximus. Donec quis lectus quis neque semper lacinia.
+     </div>
+     <div class="footer">
+       <div class="footer--item">
+         <img src="https://cdn-icons.flaticon.com/png/512/2589/premium/2589175.png?token=exp=1638268731~hmac=3409bc8affcd5c6fe4e12ff94f2054cd" class="footer--img"/> 
+         5 
+         </div>
+       <div class="footer--item">
+         <img src="https://cdn-icons.flaticon.com/png/512/5053/premium/5053315.png?token=exp=1638275649~hmac=48e9f959eef2987a644326c3e44b72e6" class="footer--img"/> 
+         5
+          </div>
+       <div class="footer--item"> 
+         <img src="https://cdn-icons.flaticon.com/png/512/3601/premium/3601571.png?token=exp=1638275778~hmac=0cde8f50f78e944762ad4a0924dab93a" class="footer--img"/> 
+         1
+        </div>
+        <div class="footer--item">
+        <div class="footer__author-login">@tiredPshekowskiy</div>
+        </div>
+       
+     </div>
+    </div>
+    
+  </div>
+
+    
+ </div>
+
+
 
 </body>
 </html>
