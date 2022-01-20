@@ -5,408 +5,404 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+    *{
+        padding: 0;
+        margin: 0;
+        
+    }
 
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  
-  
-}
-
-
-ul {
-  
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style-type: none;
-  
-  
-  background-color: #333;
-  float: none;
- 
-  
-} 
-
-li {
-  float: left; 
-}
-
-
-li a {
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 14px 120px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style-type: none;
-  margin: 5px 10px 0 0;
-  overflow: auto;
-  background-color: #333;
-  float: none;
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-}
-
-.navbar li {
-  float: left;
-}
-.navbar  a {
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 14px 120px;
-  text-decoration: none;
-  font-size: 17px;
-  
-}
-
-.navbar a:hover {
-  background-color: #111;
-}
-
-
-
-.flex-container-right-side-bar{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: DodgerBlue;
-  margin-top: 10px;
-  margin-right: 30px;
-  float:right;
-  padding-top: 10px;
-  
-  
-}
-
-.flex-container-right-side-bar > div{
-  background-color: #f1f1f1;
-  margin: 10px;
-  margin-left: 20px;
-  text-align: center;
-  padding-top: 10px;
-  font-size: 30px;
-}
-
-.flex-container-main {
-     
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  
-  
-  padding: 10px; 
-  margin-left: 80px;
+    .container{
+        max-width: 1000px;
+        margin: auto;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
+        background-color: #f0f0f0;
+    }
     
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  
-}
-.post{
-  
- display: flex;
- flex-wrap: wrap;
- border: 1px solid #f0f0f0;
- margin-bottom: 5px;
- padding: 10px 15px;
- padding-bottom: 5px;
- max-width: 100%;
- 
- 
-}
+    h1, h2, h4, h5, h6{
+        padding: 0px 20px 0px 20px;
+    }
 
-.post__author-picture{
-  width: 49px;
-  height: 49px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
+    header{
+        background-color: #333;
+    }
 
-.post_header{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 5px;
-  border-bottom: 1px solid #f0f0f0;
-  
-}
+    .logo{
+        height: 40px;
+        padding: 0px 10px 0px 10px;
+    }
 
-.post_post-name{
-  font-size: 15px;
-  font-weight: 700;
-  margin-right: 5px;
-  }
+    header nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
 
-.post_image{
-  width: 100%;
-  border-radius: 15px;
-  margin-top: 10px;
-}
+    header nav a{
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
 
-.post_content{
-  width: 60%;
-  border-radius: 5px;
- 
-}
+    header nav a:hover{
+        color: aquamarine;
+    }
 
-.footer{
-  width: 60%;
-  display:inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #f0f0f0; 
-  padding-bottom: 2px;
-  font-size: 15px;
-   
-  
-}
-.footer--item{
- font-size: 15px;
- display:flex;
+    section{
+        border: 1px solid rgb(206, 199, 199);;
+        padding: 15px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        background-color: #fff;
+    }
 
- padding: 10px;
- padding-bottom: 10px;
- 
- 
-  
+    .footer_section{
+        padding: 15px;
+    }
 
-}
+    .post_header{
+        display: flex;
+        width: 90%;
+        margin-bottom: 5px;
+        padding: 0px 10px 5px 10px;
+        border-bottom: 1px solid #f0f0f0;
+    }
 
-.footer--img{
-  
-  height: 20px;
-  margin-right: 20px;
-}
+    .post_header--name{
+        padding: 10px 10px 10px 20px;
+        font-size: 25px;
+        font-weight: 700;
+    }
 
-.footer__author-login{ 
- font-size: 15px;
-  color: #696969;
-}
+    main{
+        float: left;
+        width: 70%;
+        padding: 10px 15px 15px 15px;
+        
+    }
 
+    main p{
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        padding: 5px 20px 5px 20px;
+    }
+    .post_image{
+        width: 70%;
+        border-radius: 15px;
+        padding: 5px 20px 5px 20px;
+    }
+
+    .post__author-picture{
+        width: 49px;
+        height: 49px;
+        border-radius: 50%;
+                
+    }
+    
+
+    .video--section{
+        width: 80%;
+        position: relative;
+        padding: 5px 20px 5px 20px;
+        height: 300px ;
+    }
+
+    .video--section iframe{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        height: 95%;
+        width: 100%;
+        padding: 5px 20px 0px 20px;
+        
+        
+    }
+
+    aside{
+        float: right;
+        width: 25%;
+        background-color: #fff;
+        
+    }
+
+    aside p{
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        padding:  10px 20px 20px 20px;
+        background-color: #fff;
+    }
+
+    .aside_image{
+        width: 85%;
+        padding: 20px;
+    }
+    
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo-footer{
+        height: 35px;
+        padding: 5px 0px 0px 10px;
+       
+    }
+
+    footer p, a{
+        color: #fff;
+        padding: 0px 10px 5px 10px;
+        text-decoration: none;
+    }
+
+    footer a:hover{
+        color: aquamarine;
+    }
+
+     
+   .post_footer{
+     width: 90%;
+     display:inline-flex;
+     justify-content: space-between;
+     align-items: center;
+     border-top: 1px solid #f0f0f0; 
+     padding: 0px 0px 0px 15px;
+     font-size: 15px;
+    }
+   .post_footer--item{
+     font-size: 15px;
+     display:flex;
+     padding: 10px;
+     padding-bottom: 10px;
+   }
+
+   .post_footer--item:hover{
+       color: rgb(177, 189, 183);
+   }
+
+    .post_footer--img{
+      height: 20px;
+      margin-right: 20px;
+    }
+
+   .post_footer__author-login{ 
+      font-size: 15px;
+      color: #696969;
+    }
+
+    .post_footer__author-login:hover{
+        color: rgb(24, 26, 25);
+    }
+
+
+    @media(max-width: 700px){
+        main{
+            float: none;
+            width: 100%;
+        }
+
+        aside{
+            float: none;
+            width: 100%;
+            padding: 20px;
+        }
+    }
 
 
 </style>
 </head>
-<body>
+<body> 
+    <div class="container">
+        <header>
+            
+            <nav>
+                <img class="logo" src="leaf.png" >
+                <a href="#home">Главная</a>
+                <a href="#comunity">Сообщества</a>
+                <a href="#users">Пользователи</a>
+                <a href="#news">Новое</a>
+            </nav>
+        </header>
 
-<nav>
-<ul>
-  <li><a class="active" href="#home">Главная</a></li>
-  <li><a href="#community">Сообщества</a></li>
-  <li><a href="#users">Пользователи</a></li>
-  <li><a href="#new">Новое</a></li>
-</ul>
-</nav>
+        <main>
+            <section>
+                
+                <div class="post_header">
+                <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
+                <div class="post_header--name">
+                  Blog Post #5
+                </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi quo quae fugit dignissimos natus reprehenderit corporis repudiandae delectus, temporibus quam rem! Magni sit sunt eaque ipsa excepturi aliquam beatae architecto cupiditate quod modi, nisi quaerat repudiandae commodi quisquam optio laudantium cumque facere nihil animi. Odio consequuntur dolorum dolores voluptatem.</p>
+                <div class="post_footer">
+                    <div class="post_footer--item">
+                      <img src="heart.png" class="post_footer--img"/> 
+                      5 
+                      </div>
+                    <div class="post_footer--item">
+                      <img src="repost.png" class="post_footer--img"/> 
+                      5
+                       </div>
+                    <div class="post_footer--item"> 
+                      <img src="chat-bubble.png" class="post_footer--img"/> 
+                      1
+                     </div>
+                     <div class="post_footer--item">
+                     <div class="post_footer__author-login">@tiredPshekowskiy</div>
+                     </div>
+                        
+                </div>
+            </section>
+            
 
+            <section>
+                <div class="post_header">
+                    <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
+                    <div class="post_header--name">
+                      Blog Post #4
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi quo quae fugit dignissimos natus reprehenderit corporis repudiandae delectus, temporibus quam rem! Magni sit sunt eaque ipsa excepturi aliquam beatae architecto cupiditate quod modi, nisi quaerat repudiandae commodi quisquam optio laudantium cumque facere nihil animi. Odio consequuntur dolorum dolores voluptatem.</p>
+               
+                <img class="post_image" src="https://i.pinimg.com/564x/12/5c/77/125c77a1a879eb62cd838989dd44fc09.jpg"/>
+        
+                <div class="post_footer">
+                    <div class="post_footer--item">
+                      <img src="heart.png" class="post_footer--img"/> 
+                      5 
+                      </div>
+                    <div class="post_footer--item">
+                      <img src="repost.png" class="post_footer--img"/> 
+                      5
+                       </div>
+                    <div class="post_footer--item"> 
+                      <img src="chat-bubble.png" class="post_footer--img"/> 
+                      1
+                     </div>
+                     <div class="post_footer--item">
+                     <div class="post_footer__author-login">@tiredPshekowskiy</div>
+                     </div>
+                        
+                </div>
+            </section>
+            
 
-<div class="navbar">
-  <nav>
-  <ul>
-   <li><a href="#home" class="active">Текст</a></li> 
-   <li><a href="#news">Текст</a></li>
-   <li><a href="#contact">+Новый пост</a></li>
-   <li> <a href="#contact">Уведомления +5</a></li>
-  </ul>
-  </nav>
-</div>
+            <section>
+                <div class="post_header">
+                    <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
+                    <div class="post_header--name">
+                      Blog Post #3
+                    </div>
+                </div>
+                <div class="video--section">
+                  <iframe src="https://www.youtube.com/embed/SU1bCbckVpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="post_footer">
+                    <div class="post_footer--item">
+                      <img src="heart.png" class="post_footer--img"/> 
+                      5 
+                      </div>
+                    <div class="post_footer--item">
+                      <img src="repost.png" class="post_footer--img"/> 
+                      5
+                       </div>
+                    <div class="post_footer--item"> 
+                      <img src="chat-bubble.png" class="post_footer--img"/> 
+                      1
+                     </div>
+                     <div class="post_footer--item">
+                     <div class="post_footer__author-login">@tiredPshekowskiy</div>
+                     </div>
+                        
+                </div>
+            </section>
+            
 
+            <section>
+                <div class="post_header">
+                    <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
+                    <div class="post_header--name">
+                      Blog Post #2
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi quo quae fugit dignissimos natus reprehenderit corporis repudiandae delectus, temporibus quam rem! Magni sit sunt eaque ipsa excepturi aliquam beatae architecto cupiditate quod modi, nisi quaerat repudiandae commodi quisquam optio laudantium cumque facere nihil animi. Odio consequuntur dolorum dolores voluptatem.</p>
+                <div class="post_footer">
+                    <div class="post_footer--item">
+                      <img src="heart.png" class="post_footer--img"/> 
+                      5 
+                      </div>
+                    <div class="post_footer--item">
+                      <img src="repost.png" class="post_footer--img"/> 
+                      5
+                       </div>
+                    <div class="post_footer--item"> 
+                      <img src="chat-bubble.png" class="post_footer--img"/> 
+                      1
+                     </div>
+                     <div class="post_footer--item">
+                     <div class="post_footer__author-login">@tiredPshekowskiy</div>
+                     </div>
+                        
+                </div>
+            </section>
+            
 
+            <section>
+                <div class="post_header">
+                    <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
+                    <div class="post_header--name">
+                      Blog Post #1
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi quo quae fugit dignissimos natus reprehenderit corporis repudiandae delectus, temporibus quam rem! Magni sit sunt eaque ipsa excepturi aliquam beatae architecto cupiditate quod modi, nisi quaerat repudiandae commodi quisquam optio laudantium cumque facere nihil animi. Odio consequuntur dolorum dolores voluptatem.</p>
+                <div class="post_footer">
+                    <div class="post_footer--item">
+                      <img src="heart.png" class="post_footer--img"/> 
+                      5 
+                      </div>
+                    <div class="post_footer--item">
+                      <img src="repost.png" class="post_footer--img"/> 
+                      5
+                       </div>
+                    <div class="post_footer--item"> 
+                      <img src="chat-bubble.png" class="post_footer--img"/> 
+                      1
+                     </div>
+                     <div class="post_footer--item">
+                     <div class="post_footer__author-login">@tiredPshekowskiy</div>
+                     </div>
+                        
+                </div>
+            </section>
+            
+        </main>
 
+        <aside>
+            <h3 style="padding: 20px 20px 0px 20px;">Здесь могла бы быть ваша реклама</h3>
+            <img class="aside_image" src="https://i.pinimg.com/564x/68/cc/94/68cc947a6b62024d0b76a780a81ffcef.jpg" alt="">
+            
+            <h3 style="padding: 0px 20px 0px 20px;">AdBlock</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ratione numquam non officia deserunt eligendi dicta id magnam, corrupti tempora ullam deleniti necessitatibus, delectus veritatis libero sint dolor minima illum.</p>
+        </aside>
 
+        <footer>
+            <div class="footer_section">
+                <a href="#text">Текст</a>
+                <a href="#text">Текст</a>
+                <a href="#newpost">+ Новый Пост</a>
+                <a href="#notifications">Уведомления 5</a>
+                <img class="logo-footer" src="leaf.png" >
+            </div>
+            <p>Made by Polina Trifonova P3269</p>
+        </footer>
 
-
-<div class="flex-container-right-side-bar">
-   <div> ADD BLOCK </div>
-   <div> Тут могла бы быть ваша реклама </div>
- </div>
-
-<div class="flex-container-main">
-   <div class="post"> 
-     
-     <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
-     <div class="post_main">
-       <div class="post_header">
-       <div class="post_post-name">
-        Что делаем?
-      </div>
-      
-       
-      </div>
-      <div class="post_content"> изучаем html</div>
-      <div class="footer">
-        <div class="footer--item">
-          <img src="https://cdn-icons.flaticon.com/png/512/2589/premium/2589175.png?token=exp=1638268731~hmac=3409bc8affcd5c6fe4e12ff94f2054cd" class="footer--img"/> 
-          5 
-          </div>
-        <div class="footer--item">
-          <img src="https://cdn-icons.flaticon.com/png/512/5053/premium/5053315.png?token=exp=1638275649~hmac=48e9f959eef2987a644326c3e44b72e6" class="footer--img"/> 
-          5
-           </div>
-        <div class="footer--item"> 
-          <img src="https://cdn-icons.flaticon.com/png/512/3601/premium/3601571.png?token=exp=1638275778~hmac=0cde8f50f78e944762ad4a0924dab93a" class="footer--img"/> 
-          1
-         </div>
-         <div class="footer--item">
-         <div class="footer__author-login">@tiredPshekowskiy</div>
-         </div>
-		    
-      </div>
-     </div>
-     
-   </div>
-
-    <div class="post"> 
-     <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
-     <div class="post_main">
-       <div class="post_header">
-       <div class="post_post-name">
-        Что делаем?
-      </div>
-       
-      </div>
-      <div class="post_content"> изучаем html</div>
-      <div class="footer">
-        <div class="footer--item">
-          <img src="https://cdn-icons.flaticon.com/png/512/2589/premium/2589175.png?token=exp=1638268731~hmac=3409bc8affcd5c6fe4e12ff94f2054cd" class="footer--img"/> 
-          5 
-          </div>
-        <div class="footer--item">
-          <img src="https://cdn-icons.flaticon.com/png/512/5053/premium/5053315.png?token=exp=1638275649~hmac=48e9f959eef2987a644326c3e44b72e6" class="footer--img"/> 
-          5
-           </div>
-        <div class="footer--item"> 
-          <img src="https://cdn-icons.flaticon.com/png/512/3601/premium/3601571.png?token=exp=1638275778~hmac=0cde8f50f78e944762ad4a0924dab93a" class="footer--img"/> 
-          1
-         </div>
-         <div class="footer--item">
-         <div class="footer__author-login">@tiredPshekowskiy</div>
-         </div>
-		    
-      </div>
-     </div>
-     
-   </div>
-
-   <div class="post"> 
-    <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
-    <div class="post_main">
-      <div class="post_header">
-      <div class="post_post-name">
-       Что делаем?
-     </div>
-      
-     </div>
-     <div class="post_content"> какой же он миленький
-      <img class="post_image" src="https://i.pinimg.com/564x/12/5c/77/125c77a1a879eb62cd838989dd44fc09.jpg"/></div>
-     <div class="footer">
-       <div class="footer--item">
-         <img src="https://cdn-icons.flaticon.com/png/512/2589/premium/2589175.png?token=exp=1638268731~hmac=3409bc8affcd5c6fe4e12ff94f2054cd" class="footer--img"/> 
-         5 
-         </div>
-       <div class="footer--item">
-         <img src="https://cdn-icons.flaticon.com/png/512/5053/premium/5053315.png?token=exp=1638275649~hmac=48e9f959eef2987a644326c3e44b72e6" class="footer--img"/> 
-         5
-          </div>
-       <div class="footer--item"> 
-         <img src="https://cdn-icons.flaticon.com/png/512/3601/premium/3601571.png?token=exp=1638275778~hmac=0cde8f50f78e944762ad4a0924dab93a" class="footer--img"/> 
-         1
-        </div>
-        <div class="footer--item">
-        <div class="footer__author-login">@tiredPshekowskiy</div>
-        </div>
-       
-     </div>
-    </div>
-    
-  </div>
-
-  <div class="post"> 
-    <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
-    <div class="post_main">
-      <div class="post_header">
-      <div class="post_post-name">
-       Что делаем?
-     </div>
-      
-     </div>
-     <div class="post_content"> изучаем html</div>
-     <div class="footer">
-       <div class="footer--item">
-         <img src="https://cdn-icons.flaticon.com/png/512/2589/premium/2589175.png?token=exp=1638268731~hmac=3409bc8affcd5c6fe4e12ff94f2054cd" class="footer--img"/> 
-         5 
-         </div>
-       <div class="footer--item">
-         <img src="https://cdn-icons.flaticon.com/png/512/5053/premium/5053315.png?token=exp=1638275649~hmac=48e9f959eef2987a644326c3e44b72e6" class="footer--img"/> 
-         5
-          </div>
-       <div class="footer--item"> 
-         <img src="https://cdn-icons.flaticon.com/png/512/3601/premium/3601571.png?token=exp=1638275778~hmac=0cde8f50f78e944762ad4a0924dab93a" class="footer--img"/> 
-         1
-        </div>
-        <div class="footer--item">
-        <div class="footer__author-login">@tiredPshekowskiy</div>
-        </div>
-       
-     </div>
-    </div>
-    
-  </div>
-
-  <div class="post"> 
-    <img class="post__author-picture" src="https://i.pinimg.com/564x/e4/fc/2c/e4fc2c78c2b89dd59a1ad78072216569.jpg"/>
-    <div class="post_main">
-      <div class="post_header">
-      <div class="post_post-name">
-       Что делаем?
-     </div>
-      
-     </div>
-     <div class="post_content"> 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat urna, mollis volutpat leo quis, aliquet pellentesque nisl. Donec sodales nec nulla at vestibulum. Curabitur justo dolor, pharetra sit amet lobortis ac, interdum non odio. Sed sit amet quam viverra, vulputate mi ac, pulvinar dui. Nullam nec sollicitudin odio. Ut fringilla convallis dui non lobortis. Fusce venenatis nunc felis, sed euismod ipsum rutrum egestas. Aliquam sagittis finibus ornare. In dignissim enim ac ex sodales facilisis. Praesent laoreet purus vestibulum eleifend porta. Sed sed massa at tellus iaculis consectetur in pellentesque est.
-
-      Phasellus euismod ligula ut lacus posuere facilisis. Integer laoreet tellus quis suscipit ultrices. In et tempus mi. Pellentesque non volutpat lectus, ac commodo sapien. Suspendisse fringilla nunc odio, non imperdiet leo rhoncus eu. Phasellus euismod odio libero. Duis viverra faucibus vestibulum. Nullam sed pellentesque lorem, at bibendum nulla. Integer placerat, magna quis dapibus scelerisque, dolor libero rutrum lacus, accumsan tempus odio elit eu eros. Aenean semper sem nec ultrices maximus. Donec quis lectus quis neque semper lacinia.
-     </div>
-     <div class="footer">
-       <div class="footer--item">
-         <img src="https://cdn-icons.flaticon.com/png/512/2589/premium/2589175.png?token=exp=1638268731~hmac=3409bc8affcd5c6fe4e12ff94f2054cd" class="footer--img"/> 
-         5 
-         </div>
-       <div class="footer--item">
-         <img src="https://cdn-icons.flaticon.com/png/512/5053/premium/5053315.png?token=exp=1638275649~hmac=48e9f959eef2987a644326c3e44b72e6" class="footer--img"/> 
-         5
-          </div>
-       <div class="footer--item"> 
-         <img src="https://cdn-icons.flaticon.com/png/512/3601/premium/3601571.png?token=exp=1638275778~hmac=0cde8f50f78e944762ad4a0924dab93a" class="footer--img"/> 
-         1
-        </div>
-        <div class="footer--item">
-        <div class="footer__author-login">@tiredPshekowskiy</div>
-        </div>
-       
-     </div>
-    </div>
-    
-  </div>
-
-    
- </div>
-
-
-
+    </div>    
 </body>
 </html>
